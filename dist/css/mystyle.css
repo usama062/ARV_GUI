@@ -1,8 +1,15 @@
 /*background:url('../../images/bg.png');background-size: 100vh;background-repeat: no-repeat;*/
+  @font-face {
+  font-family: 'myfont';
+  src: url('libel.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('libel.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
 .dymbox{
 	border-radius: 5px;
 	border:1px solid #D2D6DE;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 .dymboxn{
 	border-radius: 5px;
@@ -14,6 +21,7 @@
 .dyminput{
 	border:0px;
 	background:#fff !important;
+	text-transform: uppercase;
 }
 
 .dymaddon{
@@ -72,3 +80,38 @@ hr.style14 {
 	text-align: center;
 	margin-bottom: 5px;
 }
+
+.headhead {
+	font-size: 40px;
+	color:#fff;
+	position:relative;
+	margin-right: 300px;
+	background-color: ;
+	margin-top: 20px;
+}
+
+@media (max-width:1060px){
+	.headhead {
+		font-size: 30px;
+		padding-top: 50px;
+	}
+}
+
+@media (max-width:995px){
+	.asidestyle {
+	}
+}
+
+.modal {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+
+.table-style{
+	text-align: center;
+}
+ 
