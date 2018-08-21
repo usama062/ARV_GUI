@@ -85,9 +85,12 @@ hr.style14 {
 	font-size: 40px;
 	color:#fff;
 	position:relative;
-	margin-right: 300px;
 	background-color: ;
-	margin-top: 20px;
+	line-height: 20px;
+	float: left;
+	margin-top: 40px;
+	margin-right: 250px;
+
 }
 
 @media (max-width:1060px){
