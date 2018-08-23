@@ -1,77 +1,173 @@
 <!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  * {box-sizing: border-box;}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ARVS | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/mystyle.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+        <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
 
-  body { 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Google Font -->
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<style type="text/css">
+  /* CSS used here will be applied after bootstrap.css */
+
+.dropdown {
+    display:inline-block;
+    margin-left:20px;
+    padding:10px;
   }
 
-  .header {
-    overflow: hidden;
-    background-color: #253136;
-    padding: 20px 10px;
+
+.glyphicon-bell {
+   
+    font-size:1.5rem;
   }
 
-  .header a {
-    float: left;
-    padding: 12px;
-    text-decoration: none; 
-    line-height: ;
+.notifications {
+   min-width:420px; 
   }
-
-  .header a.logo {
-    background-color: red;
-
-  }
-
-
-
-  .header-right {
-    float: right;
-  }
-
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
+  
+  .notifications-wrapper {
+     overflow:auto;
+      max-height:250px;
     }
-    .header-right {
-      float: none;
-    }
+    
+ .menu-title {
+     color:#ff7788;
+     font-size:1.5rem;
+      display:inline-block;
+      }
+ 
+.glyphicon-circle-arrow-right {
+      margin-left:10px;     
+   }
+  
+   
+ .notification-heading, .notification-footer  {
+  padding:2px 10px;
+       }
+      
+        
+.dropdown-menu.divider {
+  margin:5px 0;          
   }
+
+.item-title {
+  
+ font-size:1.3rem;
+ color:#000;
+    
+}
+
+.notifications a.content {
+ text-decoration:none;
+ background:#ccc;
+
+ }
+    
+.notification-item {
+ padding:10px;
+ margin:5px;
+ background:#ccc;
+ border-radius:4px;
+ }
+
+
+
+
 </style>
 </head>
+
 <body>
-
-  <div class="header">
-    <a href="#default" class="logo"><img src="images/header.png"></a>
-    <div class="header-right">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-bell-o"></i>
-        <span class="label label-warning">10</span>
-      </a>
-      <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
+  <div class="container-fluid" style="background-color: #253136;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="row">
+     <div style="background-color:;margin-bottom: 2px;" class="col-lg-1"><img src="images/header.png"></div>
+     <div class="col-lg-3"></div>
+     <div style="font-family: 'myfont';font-size: 40px;float: left;color: white;margin-top: 8px;">THE ACADEMIC RECORDS VERIFICATION SYSTEM</div>
+     <div class="dropdown">
+  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+    <i class="glyphicon glyphicon-bell"></i>
+  </a>
+  
+  <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+    
+    <div class="notification-heading"><h4 class="menu-title">Notifications</h4><h4 class="menu-title pull-right">View all<i class="glyphicon glyphicon-circle-arrow-right"></i></h4>
     </div>
-  </div>
+    <li class="divider"></li>
+   <div class="notifications-wrapper">
+     <a class="content" href="#">
+      
+       <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 · day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
+       
+    </a>
+     <a class="content" href="#">
+      <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 · day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
+    </a>
+     <a class="content" href="#">
+      <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
+    </a>
+     <a class="content" href="#">
+      <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
 
+    </a>
+     <a class="content" href="#">
+      <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
+    </a>
+     <a class="content" href="#">
+      <div class="notification-item">
+        <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+        <p class="item-info">Marketing 101, Video Assignment</p>
+      </div>
+    </a>
 
+   </div>
+    <li class="divider"></li>
+    <div class="notification-footer"><h4 class="menu-title">View all<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></div>
+  </ul>
+  
+</div>
+   </div>
+
+ </div>
 </body>
 </html>

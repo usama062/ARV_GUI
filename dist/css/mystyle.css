@@ -117,4 +117,7 @@ hr.style14 {
 .table-style{
 	text-align: center;
 }
- 
+
+.notiuser:hover{
+	background-color: #212C30;
+ }
